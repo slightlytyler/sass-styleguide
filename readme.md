@@ -51,6 +51,10 @@ Be verbose. `.is-active` rather than just `.active`
     * Template / view / page specific styles 
   * **tools**
     * Useful mixins
+  * **bower**
+    * Styles for third party plugins installed via bower.
+  * **vendor**
+    * Styles for third party plugins *not* installed via bower
   * **style.scss**
     * Global parent sheet that imports all others
   * **shame.scss**
