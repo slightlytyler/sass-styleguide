@@ -33,6 +33,10 @@ http://thesassway.com/intermediate/using-object-oriented-css-with-sass
 ###States
 Be verbose. `.is-active` rather than just `.active`
 
+###Color
+  * Use hsl() and hsla() as much as possible. These colors are easy to understand and manipulate
+  * When rgba() is necessary use the Sass converter `rgba(#123456, .35)`
+
 
 ##File Structure
   * **base**
