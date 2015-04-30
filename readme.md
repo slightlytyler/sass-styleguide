@@ -4,7 +4,7 @@ There are a lot of methodologies for creating and organizing style sheets. OOCSS
 
   * **Maintainability**
     * Making changes to the design should require minimum (no) change to the markup.
-    * Simple changes to the markup should not require reordering the cascade or redefining    class names.
+    * Simple changes to the markup should not require reordering the cascade or redefining class names.
   
   * **Reusability**
     * Object oriented approach.
@@ -21,20 +21,16 @@ There are a lot of methodologies for creating and organizing style sheets. OOCSS
   * Building styles for components by separating them into individual files. All imported through a single parent style sheet.
 
 ###Naming Syntax
-Follow the **BEM** approach described here.
-
-http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/
+Simple dasherized names are best. When possible seperate names into multiple classes (.preview.modal instead of .preview-modal)
 
 ###Markup
-Try to avoid using non-semantic classes in the markup as much as possible. Instead use Sass placeholders and have the component class extend them.
+Try to avoid using non-semantic classes in the markup as much as possible. Instead use mixins and have the component class import them.
 
 http://thesassway.com/intermediate/using-object-oriented-css-with-sass
 
-###States
-Be verbose. `.is-active` rather than just `.active`
 
 ###Color
-  * Use hsl() and hsla() as much as possible. These colors are easy to understand and manipulate
+  * Use the colors already in the palette when possible and new colors to the file.
   * When rgba() is necessary use the Sass converter `rgba(#123456, .35)`
 
 
@@ -68,5 +64,5 @@ Be verbose. `.is-active` rather than just `.active`
 ##Things to Avoid
   * Use of !important
   * Styling using IDs
-  * Styling html elements rather than using a class
+  * Styling html elements rather than using a class (sometimes this ok... use discression)
   * Undoing styles (if you have to do this a lot you probably need to rethink your cascade)
